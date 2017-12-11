@@ -1,0 +1,25 @@
+{
+  "name": "robotstore",
+  "version": "1.0.0",
+  "description": "fefproject",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonesdl-2785/RobostoreProject.git"
+  },
+  "author": "diane jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonesdl-2785/RobostoreProject/issues"
+  },
+  "homepage": "https://github.com/Jonesdl-2785/RobostoreProject#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "npm-check": "^5.5.2"
+  }
+}

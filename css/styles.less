@@ -1,0 +1,514 @@
+/* LESS Variables */
+/*define fonts */
+@font-face1 {
+font-family: roboto-black;
+src: url(https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-black-webfont.ttf);
+}
+@font-face3 {
+font-family: roboto-italic;
+src: url(https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-italic-webfont.ttf);
+}
+@font-face4 {
+font-family: roboto-thin;
+src: url(https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-thin-webfont.ttf);
+}
+@font-face5 {
+font-family: roboto-thinitalic;
+src: url(https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-thinitalic-webfont.ttf);
+}
+
+@font-face6 {
+font-family: roboto-bold;
+src: url(https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto_slab/robotoslab-bold-webfont.ttf);
+}
+/* end of define fonts */
+
+/* LESS variable for site styles */
+/* LESS variables for fonts */
+@font-face0:'Roboto', sans-serif;
+@font-face1:'Roboto-black', sans-serif;
+@font-face2:'Roboto-bold', sans-serif;
+@font-face3:'Roboto-italic', serif;
+@font-face4: italic;
+@font-base-size:14px;
+/* LESS Variables for text */
+@text-shadow: 2px 2px 2px;
+
+/* LESS variables for images */
+@img-size-wsml: 225px;
+@img-size-hsml: 225px;
+@font-base-size: 14px;
+/* colors */
+@primary-color: #E70909;
+@accent-color: #422C2C;
+@foreground-color: #F8F3F3;
+@background-color: #CBC6C6;
+@primary-color: medium grey;
+@font-color: black;
+@text-shadow-color: #FF3619;
+@navbar-color: #990000;
+/*LESS Variables for text  */
+@text-shadow: 4px 3px 0px #990000, 9px 8px 0px rgba(0,0,0,0.15);
+/* Positioning Variables */
+@positionR: relative;
+@positionA: absolute;
+@positionF: fixed;
+
+/* content */
+@font-family: Helvetica, sans-serif;
+@dlj-font: 1em;
+@dlj-para: #d9d9d9;
+//@primary-color: #acb3b5;
+@title-font: 30px, #fff, 'Helvetica', serif;
+@dlj2-font: 25px, #737373, serif;
+@dlj3-font: 20px, #737373, serif;
+@body-bg: #990000;
+
+
+/*end of variable declaration */
+/*This defines Semantic Elements as blocks for older browsers  */
+article, aside, figure, footer, header, main, nav, section {
+  display: block;
+}
+
+body{
+  background-color: #CBC6C6;
+  font-family: @font-face0;
+  font-size: @font-base-size;
+  width: auto;
+  height: auto;
+}
+
+.pre-loader {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.welcome {
+  width: 300px;
+  height: 70px;
+  margin: 150px auto 50px auto;
+  font-size: @font-base-size + 35px;
+  text-shadow: -1px 2px 2px #000;
+  text-align: center;
+  color: #fff;
+}
+.load-frame {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  position: relative;
+}
+.loader1, .loader {
+  position: absolute;
+  border: 5px solid transparent;
+  border-radius: 50%;
+}
+.loader1 {
+  width: 70px;
+  height: 70px;
+  border-top: 5px solid #990000;
+  border-bottom: 5px solid #990000;
+  animation: clockwisespin 2s linear 3;
+}
+.loader2 {
+  width: 60px;
+  height: 60px;
+  border-left: 5px solid #ccc;
+  border-right: 5px solid #ccc;
+  top: 5px; left: 5px;
+  animation: counterclockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin {
+  0% {transform: rotate(0deg);}
+  100% {
+    transform: rotate(360deg);}
+}
+@keyframes counterclockwisespin {
+  0% {transform: rotate(0deg);}
+  100% {
+    transform: rotate(360deg);}
+}
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+
+/*header*/
+div .headerlogo {
+  height: @img-size-hsml;
+  width: @img-size-wsml;
+  padding: 0px;
+  margin: 0px;
+}
+
+img logo{
+  height: @img-size-hsml;
+  width: @img-size-wsml;
+  position: fixed; top: 0; left: 0;
+}
+
+  span#headername {
+  font-size: @font-base-size + 60px;
+  font-family: @font-face2;
+  text-shadow: @text-shadow;
+  color: @primary-color;
+  padding:  68px;
+  font-weight: bold;
+  position: @positionA;
+}
+
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*@media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+
+  }*/
+
+.search-container {
+  float: right;
+}
+
+.search-container button {
+   padding: 6px 10px;
+   margin-top: 8px;
+   margin-right: 16px;
+   background: #ddd;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+}
+search-container button:hover {
+  background: #ccc;
+}
+
+
+.search-container input[type=text]{
+  padding: 6px;
+  border: none;
+  margin-top: 16px;
+  font-size: 17px;
+  top: 50px;
+  right: 10px;
+  //z-index: 15000;
+}
+
+/* Navigation bar styles start */
+nav {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding-left: 5px;
+  border: 1px 0px 1.5px 0px #000;
+}
+
+.navbar {
+  background-color: @navbar-color;
+
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li > a {
+  text-decoration: none;
+}
+
+nav ul li > a:hover {
+  text-decoration: none;
+}
+
+.navlink {
+  height: 35px;
+  margin-right: 10px;
+  font-size: 18px;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.navlink.active {
+  color: #FF3619;
+  background-color: #fff;
+  height: auto;
+
+}
+
+a {
+  color: #73797b;
+}
+
+a:link {
+  color: #959ea1;
+  text-decoration: none;
+}
+a:visited{
+
+
+}
+a:hover{
+  color: #5c5f68;
+}
+a:active{
+
+}
+a:focus {
+
+}
+
+/* Navigation bar styles end */
+/* Navigation bar styles end */
+/* content */
+fieldset,legend{
+  margin: auto;
+  border: none;
+  outline: none;
+}
+
+.col-md-8 {
+  background-color: #990000;
+  width: 100%;
+}
+.col-md-4 header {
+  //text-align: center;
+  margin: 0 auto;
+  font-size: @font-base-size + 25px;
+  font-family: @font-face2;
+}
+.col-md-8 img {
+  //margin: 0 auto;
+  float: left;
+
+}
+
+#welcome {
+  text-align: center;
+}
+
+#welcomeimage {
+  align-items: center;
+}
+#welcometext header{
+  font-size: @font-base-size + 5px;
+  font-weight: bold;
+}
+#welcometext {
+  text-align: center;
+}
+
+.spanText{
+  margin:  1em;
+}
+.twocol {
+  column-count: 2;
+}
+.col-md-2 #coffeeofthemonth {
+  vertical-align: text-bottom;
+}
+.col-md-5 {
+
+//  background-color: mediumseagreen;
+  //color:white;
+  padding-top: 2px;
+text-align: justify;
+
+}
+
+
+.threecol {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+//robots page
+div #container .jumobotron {
+  width: 100%;
+  height: 100%;
+  background-color: #990000;
+}
+
+.jumbotron img {
+  width: 400px;
+  border-radius: 10px;
+  opacity: .95;
+}
+.robots {
+  margin: auto;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: rgba(128, 128, 128, .5);
+  border: 4px solid #808080;
+}
+
+#robo1 {
+}
+
+.img-thumbnail li {
+  list-style: none;
+}
+
+
+.rowContainer #robots{
+  width: 750px;
+}
+
+h4, h5 {
+  font-family: @font-face3;
+  font-size: @font-base-size + 5px;
+}
+
+.rowContainer {
+  margin: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.rowContainer img {
+  border: 2px;
+  background-color: @foreground-color;
+  width: 100%;
+  height: 100%;
+}
+
+caption {
+  background-color: #ccc;
+}
+
+p{
+  color: 	 @dlj-para;
+  text-align: justify-distribute;
+  line-height: 1.2em;
+
+}
+[class*='col-'] {
+  padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.col-xs-6 col-md-4 {
+  //background-color: blue;
+  width: 33.32%
+
+}
+art {
+  background-color: #990000;
+}
+
+.img-thumbnail {
+    //position: relative;
+    width: 500px;
+    height: 300px;
+    padding: 0px;
+    margin-bottom: 2px;
+}
+
+.caption {
+  border: 1px solid #fff;
+}
+
+.col-md-4 img{
+  border: .008px lightgrey;
+  padding: 2em;
+  width: 380px;
+  height: 480px;
+  color: #e6e6e6;
+}
+
+fieldset,label {
+  font-family: @font-face2;
+  font-size: @font-base-size + 2px;
+}
+//hardware page
+fieldset, legend {
+  color: @font-color;
+}
+
+form {
+  padding-left: 1em;
+}
+
+form p {
+  padding-left: 2em;
+}
+
+form label {
+  padding-left: 1.5em;
+}
+form, label, p {
+  font-family: @font-face1;
+  font-size: @font-base-size + 4px;
+  color: maroon;
+}
+
+label, p{
+}
+// about page
+fieldset, p, #history {
+  font-style: @font-face4;
+  font-size: @font-base-size + 4px;
+}
+
+// contact page
+div, #contactForm, p, label{
+  font-family: @font-face0;
+  color: @font-color;
+}
+input{
+  margin-left: 25px;
+}
+#email {
+  margin-left: 60px;
+}
+
+#contactForm input{
+  background-color: #fff;
+}
+
+.Highlight{
+  background-color:Yellow;
+}
+
+.LightHighlight{
+  background-color: #e5e0b0;
+}
+
+.DarkHighlight{
+  background-color: #e0c7c7;
+}
+//footer information
+#footer {
+  margin-top: 95px;
+  padding-top: 35px;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: .9em;
+  font-size: 8px;
+  background-color: @primary-color;
+}
