@@ -22,9 +22,9 @@
           </a>
       <span id="headername">Mr. Robot</span>
       <div class="search-container">
-          <input type="text" class="searchbox"  id="inputText" name="search" placeholder="Search our store" />
+        <input type="text" class="searchbox" id="inputText" name="search" placeholder="Search our store" />
         <button type="submit"><i class="fa fa-search"></i></button>
-    </div>
+      </div>
     </div>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -64,64 +64,64 @@
   <div class="rowContainer" class="container-fluid" id="robots">
     <div class="row">
       <ul id="roboUL">
-      <div class="col-xs-6 col-md-4">
-        <div class="img-thumbnail">
-            <li>
-          <article id="robo1">
-            <h4><label for="imgrobo1">  Name:</label> R.E.T.</h4>
-            <a href="images/roboDog.png" class="list-group-item">
-            <img id="imgrobo1" src="images/roboDog.png" class="img-fluid" style="width:100%" alt="robo1"></a>
-            <div class="caption">
-              <h5><strong>Description:</strong></h5>
-              <p>This was our first robot. He was modeled after the famous movie character E.T.
-              </p>
-          </article>
-        </li>
-          </div>
-        </div>
         <div class="col-xs-6 col-md-4">
           <div class="img-thumbnail">
             <li>
-            <article id="robo2">
-              <h4><label for="imgrobo2">  Name:</label> Butler.Bot</h4>
-              <a href="images/robot2.png" class="list-group-item">
-              <img id="imgrobo2" src="images/robot2.png" class="img-fluid" style="width:100%" alt="robo2"></a>
-              <div class="caption">
-                <h5><strong>Description:</strong></h5>
-                <p>
-                    This was our second robot. He makes a mean martini!</p>
-            </article>
-          </li>
+              <article id="robo1">
+                <h4 class="robs"><label for="imgrobo1">  Name:</label> R.E.T.</h4>
+                <a href="images/roboDog.png" class="list-group-item">
+            <img id="imgrobo1" src="images/roboDog.png" class="img-fluid" style="width:100%" alt="robo1"></a>
+                <div class="caption">
+                  <h5><strong>Description:</strong></h5>
+                  <p>This was our first robot. He was modeled after the famous movie character E.T.
+                  </p>
+              </article>
+            </li>
             </div>
           </div>
           <div class="col-xs-6 col-md-4">
             <div class="img-thumbnail">
               <li>
-              <article id="robo3">
-                <h4><label for="imgrobo3">  Name:</label> Mega Man</h4>
-                  <a href="images/robot3.png" class="list-group-item">
-                <img id="imgrobo3" src="images/robot3.png" class="img-fluid" style="width:100%" alt="robo1"></a>
-                <div class="caption">
-                  <h5><strong>Description:</strong></h5>
-                  <p>
-                    This is our newest model. This one will follow you around the house.
-                  </p>
-              </article>
-            </li>
-          </ul>
+                <article id="robo2">
+                  <h4 class="robs"><label for="imgrobo2">  Name:</label> Butler.Bot</h4>
+                  <a href="images/robot2.png" class="list-group-item">
+              <img id="imgrobo2" src="images/robot2.png" class="img-fluid" style="width:100%" alt="robo2"></a>
+                  <div class="caption">
+                    <h5><strong>Description:</strong></h5>
+                    <p>
+                      This was our second robot. He makes a mean martini!</p>
+                </article>
+              </li>
               </div>
             </div>
-          </div>
-        </div>
-  </fieldset>
-    <section>
-      <footer id="footer">
-            <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-            <p class="textcontent">All site contents is &copy; Copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-            <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-      </footer><br />
-          <div class="tempContainer">
-            <template id="producttemplate">
+            <div class="col-xs-6 col-md-4">
+              <div class="img-thumbnail">
+                <li>
+                  <article id="robo3">
+                    <h4 class="robs"><label for="imgrobo3">  Name:</label> Mega Man</h4>
+                    <a href="images/robot3.png" class="list-group-item">
+                <img id="imgrobo3" src="images/robot3.png" class="img-fluid" style="width:100%" alt="robo1"></a>
+                    <div class="caption">
+                      <h5><strong>Description:</strong></h5>
+                      <p>
+                        This is our newest model. This one will follow you around the house.
+                      </p>
+                  </article>
+                </li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </fieldset>
+      <section>
+        <footer id="footer">
+          <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
+          <p class="textcontent">All site contents is &copy; Copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+          <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+        </footer><br />
+        <div class="tempContainer">
+          <template id="producttemplate">
       <article>
         <label id="lblName" for="productimage">Name:</label>
         <img id="pimage" name="productimage" class="productarticlelargeimage" src="" alt="product image">
@@ -129,35 +129,35 @@
         </article>
         </article>
       </template>
-            <template id="user">
+          <template id="user">
       <div>User</div>
       <template id="address">
       <div>Address</div>
       </template>
-            </template>
-          </div>
-        </section>
-        <script>
-          var robo = document.querySelector('#robo1').createShadowRoot();
-          /*Step1*/
-          let prdTemplate = document.querySelector('#producttemplate');
-          /*Step2*/
-          let clone = document.importNode(prdTemplate.content, true);
-          /*Step3*/
+          </template>
+        </div>
+      </section>
+      <script>
+        var robo = document.querySelector('#robo1').createShadowRoot();
+        /*Step1*/
+        let prdTemplate = document.querySelector('#producttemplate');
+        /*Step2*/
+        let clone = document.importNode(prdTemplate.content, true);
+        /*Step3*/
 
-          clone.querySelector('#pimage').src = 'images/roboDog.png';
-          clone.querySelector('#lblName').textContent = 'R.E.T';
+        clone.querySelector('#pimage').src = 'images/roboDog.png';
+        clone.querySelector('#lblName').textContent = 'R.E.T';
 
-          /*Step4*/
-          robo.appendChild(clone);
-          let userTemplate = document.querySelector('#user');
-          let userClone = document.importNode(userTemplate.content, true);
-          document.body.appendChild(userClone);
-          let addressTemplate = document.querySelector('#address');
-          let addressClone = document.importNode(addressTemplate.content, true);
-          document.body.appendChild(addressClone);
-        </script>
-        <script src="js/scripts.js"></script>
+        /*Step4*/
+        robo.appendChild(clone);
+        let userTemplate = document.querySelector('#user');
+        let userClone = document.importNode(userTemplate.content, true);
+        document.body.appendChild(userClone);
+        let addressTemplate = document.querySelector('#address');
+        let addressClone = document.importNode(addressTemplate.content, true);
+        document.body.appendChild(addressClone);
+      </script>
+      <script src="js/scripts.js"></script>
 </body>
 
 </html>

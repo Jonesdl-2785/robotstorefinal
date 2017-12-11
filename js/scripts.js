@@ -24,24 +24,33 @@ $(function(){
 $(function(){
   $('.searchbox').keyup(function() {
     let label, div, ul, li, a, i;
-    let inputText = document.getElementById('inputText').value;
+    let inputText = document.getElementById('inputText');
     let searchText = document.getElementsByTagName('label');
     //filter = inputText.value.toUpperCase();
-    h4 = document.getElementsByTagName('label');
-    ul = document.getElementById('roboUL');
-    li = document.getElementsByTagName('li');
+    let robs = document.getElementsByClassName('robs');
+    let string = $(this).text();
 
-    for (i = 0; i < li.length; i++) {
-      a = li [i].getElementsByTagName('li')[0];
-      if(a.innerHTML.toUpperCase().indexOf(searchText) == 1){
-        li [i].style.display = '';
+     for (i = 0; i < robs.length; i++) {
+       console.log(robs[i]);
+       if(string.indexOf(searchText) == 1) {
+         robs[i].style.display = '';
+       } else {
+         robs[i].style.display = 'none';
+       }
+      /*   $(this).show('');
+       } else {
+         $(this).hide('');
+       } */
+    /*if(a.innerHTML.toUpperCase().indexOf(searchText) > -1){
+        robs[i].style.display = '';
       } else {
-        li [i].style.display = 'none';
-      }
+        robs[i].style.display = 'none';
+      }*/
+
     }
-  })
+  });
    //console.log(inputText);
-   $('.list-group-item label article').each(function() {
+  /* $('.list-group-item label article').each(function() {
       console.log($(this).text());
       var string = $(this).text();
       if(string.indexOf(searchText) == 1) {
@@ -49,5 +58,5 @@ $(function(){
       } else {
         $(this).hide();
       }
-    })
+    })*/
    });
