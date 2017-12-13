@@ -89,15 +89,6 @@ body{
   z-index: 1;
 }
 
-.welcome {
-  width: 300px;
-  height: 70px;
-  margin: 150px auto 50px auto;
-  font-size: @font-base-size + 35px;
-  text-shadow: -1px 2px 2px #000;
-  text-align: center;
-  color: #fff;
-}
 .load-frame {
   width: 70px;
   height: 70px;
@@ -140,6 +131,27 @@ body{
   to {opacity: 0;}
 }
 
+div#welcome-banner.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.welcome {
+  width: 300px;
+  height: 70px;
+  margin: 150px auto 50px auto;
+  font-size: @font-base-size + 35px;
+  text-shadow: -1px 2px 2px #000;
+  text-align: center;
+  color: #fff;
+}
+
+section#welcometext {
+  padding-left: 35px;
+  font-size: @font-base-size + 2px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  text-align: center;
+}
 
 /*header*/
 div .headerlogo {
@@ -165,10 +177,6 @@ img logo{
   position: @positionA;
 }
 
-.jumbotron {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 /*@media screen and (max-width: 600px) {
   .navbar .search-container {
@@ -217,6 +225,10 @@ nav {
 .navbar {
   background-color: @navbar-color;
 
+}
+
+nav.navbar.navbar-inverse::before {
+  border-radius: none;
 }
 nav ul {
   list-style: none;
@@ -287,14 +299,22 @@ fieldset,legend{
 }
 
 .col-md-8 {
-  background-color: #990000;
-  width: 100%;
+    background-color: #990000;
+    width: 100%;
+    margin-top: -20px;
 }
 .col-md-4 header {
   //text-align: center;
   margin: 0 auto;
   font-size: @font-base-size + 25px;
   font-family: @font-face2;
+}
+
+p.tagline{
+    text-align: center;
+    color: #d9d9d9;
+    line-height: 1.2em;
+    font-size: 1.5em;
 }
 .col-md-8 img {
   //margin: 0 auto;
@@ -335,34 +355,48 @@ text-align: justify;
 
 }
 
-
 .threecol {
   column-count: 3;
   column-gap: 10px;
 }
 
 //robots page
-div #container .jumobotron {
-  width: 100%;
+.jumbotron#container {
+  width: auto;
   height: 100%;
   background-color: #990000;
+  margin-top: -20px;
 }
 
 .jumbotron img {
-  width: 400px;
-  border-radius: 10px;
-  opacity: .95;
+  width: auto;
+  border-radius: none;
+  opacity: .55;
 }
 .robots {
-  margin: auto;
-  border: none;
-  outline: none;
-  text-align: center;
-  background-color: rgba(128, 128, 128, .5);
-  border: 4px solid #808080;
+    margin: auto;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: rgba(138, 67, 67, 0.7);
+    /* border: 4px solid #990000; */
 }
 
-#robo1 {
+legend.robots {
+  margin-top: 0;
+  font-size: xx-large;
+}
+div.row {
+  margin: 0 20px 20px -35px;
+}
+
+ul#roboUL {
+  margin: auto;
+
+}
+
+#robots li {
+  list-style: none;
 }
 
 .img-thumbnail li {
@@ -371,7 +405,8 @@ div #container .jumobotron {
 
 
 .rowContainer #robots{
-  width: 750px;
+  width: 800px;
+  padding: 0 10px 0 10px;
 }
 
 h4, h5 {
@@ -380,9 +415,10 @@ h4, h5 {
 }
 
 .rowContainer {
-  margin: 30px;
+  margin: auto;
   display: inline-block;
   text-align: center;
+  width: 100%;
 }
 
 .rowContainer img {
@@ -419,7 +455,7 @@ art {
 }
 
 .img-thumbnail {
-    //position: relative;
+    position: relative;
     width: 500px;
     height: 300px;
     padding: 0px;
