@@ -3,35 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>PreLoader Page</title>
-    <link rel="stylesheet" href="css/styles.less">
+      <link rel="stylesheet/less" href="css/styles.less" type="text/css" />
+      <script>
+      function rsPreloader() {
+        let preload = document.getElementById('pre-loader');
+        let loading = 0;
+        let id = setInterval(frame, 64);
+
+        function frame() {
+          if(loading == 100){
+            clearInterval(id);
+            window.open('index.html', '_self');
+          } else {
+            loading = loading + 1;
+            if(loading == 90) {
+              preload.style.animation =  'fadeout 1s ease';
+            }
+          }
+        }
+      };
+      let myTimer;
+
+function myFunction() {
+    myTimer = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("rsPreloader").style.display = "none";
+  document.getElementById("rsDiv").style.display = "block";
+}
+      </script>
   </head>
-  <body>
-    <div class="pre-loader">
+  <body onload="rsPreloader()">
+    <div class="pre-loader animate-bottom" id="rsDiv">
       <div class="welcome">
-        Welcome to<span style="color:#990000;">  RoboStore</span>
+        <h2>Welcome to<span style="color:#990000;">  RoboStore</span></h2>
+        <p>We appreciate your Business</p>
     </div>
     <div class="load-frame">
       <div class="loader1" id="loader1"></div>
       <div class="loader2" id="loader2"></div>
   </div>
-  <script>
-  (function() {
-    let preload = document.getElementById('pre-loader');
-    let loading = 0;
-    let id = setInterval(frame, 64);
 
-    function frame() {
-      if(loading == 100){
-        clearInterval(id);
-        window.open('index.html', '_self');
-      } else {
-        loading = loading + 1;
-        if(loading == 90) {
-          preload.style.animation =  'fadeout 1s ease';
-        }
-      }
-    }
-  })();
-  </script>
   </body>
 </html>

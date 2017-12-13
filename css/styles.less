@@ -84,9 +84,24 @@ body{
   height: 100%;
   background: #333;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   z-index: 1;
+  -webkit-animation: spin 2s linear infinite;
+ animation: spin 2s linear infinite;
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+#rsDiv {
+  display: none;
+  text-align: center;
 }
 
 .load-frame {
@@ -114,6 +129,10 @@ body{
   border-right: 5px solid #ccc;
   top: 5px; left: 5px;
   animation: counterclockwisespin 2s linear 3;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes clockwisespin {
