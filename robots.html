@@ -23,34 +23,42 @@
       </a>
       <span id="headername">Mr. Robot</span>
       <div class="search-container">
-          <input type="text" class="searchbox" id="inputText" name="search" onkeyup="myFunction()" placeholder="Search our store" />
+        <input type="text" class="searchbox" id="inputText" name="search" onkeyup="myFunction()" placeholder="Search our store" />
         <button type="submit"><i class="fa fa-search"></i></button>
       </div>
-    </div><!-- end of header div -->
+      <!-- end search container -->
+    </div>
+    <!-- end of headerlogo div -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Robot Store</a>
-        </div><!-- end navbar-header -->
+          <a class="navbar-brand" href="index.html">Robot Store</a>
+        </div>
+        <!-- end navbar-header -->
 
-          <div class="collapse navbar-collapse" id="roboNavbar">
+        <div class="collapse navbar-collapse" id="roboNavbar">
           <ul class="nav navbar-nav">
             <li><a class="navlink active" href="index.html">Home</a></li>
             <li><a class="navlink" href="robots.html">Robots</a></li>
             <li><a class="navlink" href="computers.html">Hardware</a></li>
             <li><a class="navlink" href="about.html">About</a></li>
             <li><a class="navlink" href="contact.html">Contact</a></li>
-          </ul><!-- end of ul -->
-        </div><!-- end collapse navbar-nav -->
-      </div><!-- end container -->
-    </nav><!-- end navigation -->
+          </ul>
+          <!-- end of ul -->
+        </div>
+        <!-- end collapse navbar-nav -->
+      </div>
+      <!-- end container -->
+    </nav>
+    <!-- end navigation -->
+  </header>
+  <!-- end main header -->
 
-  </header><!-- end main header -->
   <div class="jumbotron" id="container">
     <fieldset class="robots">
       <legend class="robots">Mr. Robot's Top Robot Models</legend>
       <article id="robo1">
-        <h4><label for="imgrobo1">  Name:</label>R.E.T.</h4>
+        <h3><label for="imgrobo1">  Name:</label>R.E.T.</h3>
         <img id="imgrobo1" src="images/roboDog.png" class="img-fluid" alt="robo1">
         <!--<div class="caption"><h5><strong>Description:</strong></h5><
                         This was our first robot. He was modeled after the famous movie character E.T.-->
@@ -58,68 +66,73 @@
   </div>
   <!--Jumbotron container id -->
   <!-- rowContainer -->
-  <div class="rowContainer" class="container-fluid" id="robots">
-    <div class="row">
-      <ul id="roboUL">
-        <li>
-          <div class="col-xs-6 col-md-4">
-            <div class="img-thumbnail">
-              <article id="robo1">
-                <h4 class="robs"><label for="imgrobo1">  Name:</label> R.E.T.</h4>
-                <a href="images/roboDog.png" class="list-group-item">
-            <img id="imgrobo1" src="images/roboDog.png" class="img-fluid" style="width:100%" alt="robo1"></a>
-                <div class="caption">
+
+  <div class="rowContainer">
+    <div class="container-fluid" id="robots">
+      <div class="row">
+        <ul id="roboUL">
+          <li class="robsLI">
+            <div class="col-xs-6 col-md-4">
+              <div class="img-thumbnail">
+                <article id="robo1">
+                  <h4 class="robs"><label for="imgrobo1">  Name:</label> R.E.T.</h4>
+                  <a href="images/roboDog.png" class="list-group-item">
+                  <img id="imgrobo1" src="images/roboDog.png" class="img-fluid" style="width:100%" alt="robo1">
+                    <div class="caption">
                   <h5><strong>Description:</strong></h5>
                   <p>This was our first robot. He was modeled after the famous movie character E.T.
                   </p>
+                </a></div>
               </article>
-              </div>
             </div>
-        </li>
-        <li>
-          <div class="col-xs-6 col-md-4">
-            <div class="img-thumbnail">
-              <article id="robo2">
-                <h4 class="robs"><label for="imgrobo2">  Name:</label> Butler.Bot</h4>
-                <a href="images/robot2.png" class="list-group-item">
-              <img id="imgrobo2" src="images/robot2.png" class="img-fluid" style="width:100%" alt="robo2"></a>
-                <div class="caption">
-                  <h5><strong>Description:</strong></h5>
-                  <p>
-                    This was our second robot. He makes a mean martini!</p>
-              </article>
-              </div>
-            </div>
-        </li>
-        <li>
-          <div class="col-xs-6 col-md-4">
-            <div class="img-thumbnail">
-              <article id="robo3">
-                <h4 class="robs"><label for="imgrobo3">  Name:</label> Mega Man</h4>
-                <a href="images/robot3.png" class="list-group-item">
-                <img id="imgrobo3" src="images/robot3.png" class="img-fluid" style="width:100%" alt="robo1"></a>
+      </div>
+      </li>
+      <li class="robsLI">
+        <div class="col-xs-6 col-md-4">
+          <div class="img-thumbnail">
+            <article id="robo2">
+              <h4 class="robs"><label for="imgrobo2">  Name:</label> Butler.Bot</h4>
+              <a href="images/robot2.png" class="list-group-item">
+                  <img id="imgrobo2" src="images/robot2.png" class="img-fluid" style="width:100%" alt="robo2">
+                  <div class="caption"><h5><strong>Description:</strong></h5>
+                  <p>This was our second robot. He makes a mean martini!</p></a></div>
+          </article>
+        </div>
+    </div>
+    </li>
+    <li class="robsLI">
+      <div class="col-xs-6 col-md-4">
+        <div class="img-thumbnail">
+          <article id="robo3">
+            <h4 class="robs"><label for="imgrobo3">  Name:</label> Mega Man</h4>
+            <a href="images/robot3.png" class="list-group-item">
+                <img id="imgrobo3" src="images/robot3.png" class="img-fluid" style="width:100%" alt="robo3">
                 <div class="caption">
                   <h5><strong>Description:</strong></h5>
                   <p>
                     This is our newest model. This one will follow you around the house.
-                  </p>
+                  </p></a></div>
               </article>
-
-              </div>
-            </div>
-        </li>
-      </ul>
+        </div>
       </div>
-      </div>
-      </fieldset>
-      <section>
-        <footer id="footer">
-          <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-          <p class="textcontent">All site contents is &copy; Copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-          <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-        </footer><br />
-        <div class="tempContainer">
-          <template id="producttemplate">
+    </li>
+  </ul>
+  <!-- end unordered list -->
+  </div>
+  <!-- end row -->
+  </div>
+  <!-- end container-fluid -->
+  </div>
+  <!-- end rowContainer -->
+  </fieldset>
+  <section>
+    <footer id="footer">
+      <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
+      <p class="textcontent">All site contents is &copy; Copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+      <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+    </footer><br />
+    <div class="tempContainer">
+      <template id="producttemplate">
       <article>
         <label id="lblName" for="productimage">Name:</label>
         <img id="pimage" name="productimage" class="productarticlelargeimage" src="" alt="product image">
@@ -127,35 +140,35 @@
         </article>
         </article>
       </template>
-          <template id="user">
+      <template id="user">
       <div>User</div>
       <template id="address">
       <div>Address</div>
       </template>
-          </template>
-        </div>
-      </section>
-      <script>
-        var robo = document.querySelector('#robo1').createShadowRoot();
-        /*Step1*/
-        let prdTemplate = document.querySelector('#producttemplate');
-        /*Step2*/
-        let clone = document.importNode(prdTemplate.content, true);
-        /*Step3*/
+      </template>
+    </div>
+  </section>
+  <script>
+    var robo = document.querySelector('#robo1').createShadowRoot();
+    /*Step1*/
+    let prdTemplate = document.querySelector('#producttemplate');
+    /*Step2*/
+    let clone = document.importNode(prdTemplate.content, true);
+    /*Step3*/
 
-        clone.querySelector('#pimage').src = 'images/roboDog.png';
-        clone.querySelector('#lblName').textContent = 'R.E.T';
+    clone.querySelector('#pimage').src = 'images/roboDog.png';
+    clone.querySelector('#lblName').textContent = 'R.E.T';
 
-        /*Step4*/
-        robo.appendChild(clone);
-        let userTemplate = document.querySelector('#user');
-        let userClone = document.importNode(userTemplate.content, true);
-        document.body.appendChild(userClone);
-        let addressTemplate = document.querySelector('#address');
-        let addressClone = document.importNode(addressTemplate.content, true);
-        document.body.appendChild(addressClone);
-      </script>
-      <script src="js/scripts.js"></script>
+    /*Step4*/
+    robo.appendChild(clone);
+    let userTemplate = document.querySelector('#user');
+    let userClone = document.importNode(userTemplate.content, true);
+    document.body.appendChild(userClone);
+    let addressTemplate = document.querySelector('#address');
+    let addressClone = document.importNode(addressTemplate.content, true);
+    document.body.appendChild(addressClone);
+  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -23,18 +23,20 @@ $(function(){
 });
 /************************SEARCH FUNCTION-ROBOTS PAGE*****************************************/
 function myFunction() {
-  let input, filer, ul, li, a, i, label, h4;
+  let input, filer, ul, li, a, article, label, h4, div;
   input = document.getElementById('inputText');
   filter = input.value.toUpperCase();
   ul = document.getElementById('roboUL');
   li = ul.getElementsByTagName('li');
   let robs = document.getElementsByClassName('robs');
+  let robsLI = document.getElementsByClassName('robsLI');
+  let robolist = document.getElementById('roboUL');
   for (i = 0; i < li.length; i++) {
     h4 = li[i].getElementsByTagName("h4")[0];
     if (h4.innerHTML.toUpperCase().indexOf(filter) > -1){
-      robs[i].style.display = "";
+      robsLI[i].style.display = "";
     } else {
-      robs[i].style.display = "none";
+      robsLI[i].style.display = "none";
     }
   }
 }
